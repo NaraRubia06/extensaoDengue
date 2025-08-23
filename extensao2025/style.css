@@ -1,0 +1,734 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+
+  position: sticky; /* sticky faz o header “grudar” ao rolar */
+  top: 0;           /* distância do topo da tela */
+  z-index: 1000;    /* garante que fique acima do conteúdo */
+}
+
+
+
+header .logo {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e6f6fb;
+  padding: 60px 80px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0a0a23;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  color: red;
+  border: 2px solid red;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero img {
+  width: 600px;
+  height: 400px;
+  background: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+/* Botões gerais */
+.btn-red,
+.btn-outline {
+  text-decoration: none; /* tira o sublinhado do <a> */
+  display: inline-block;
+  transition: 0.3s ease; /* efeito suave */
+}
+
+/* Hover - muda cor ao passar o mouse */
+.btn-red:hover {
+  background: rgb(117, 116, 116);
+}
+
+.btn-outline:hover {
+  background: rgb(117, 116, 116);
+  color: white;
+}
+
+
+/* Seção Sobre a INTRODUÇÃO - O QUE É A DENGUE...*/
+.sobre {
+  background: #fff;
+  padding: 60px 80px;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobre-container img {
+  width: 600px;
+  height: 400px;
+  background: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.sobre-text {
+  max-width: 600px;
+}
+
+.sobre-text h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #0a0a23;
+}
+
+.sobre-text p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+
+/* Seção sobre HISTÓRIA */
+.historia {
+  background: #f8f9fa;
+  padding: 60px 80px;
+}
+
+.historia h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #0a0a23;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-left: 40px;
+  border-left: 2px solid #ddd;
+  padding-left: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-number {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #111;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+/* Seção sobre O QUE É A DOENÇA - SOBRE  */
+.sobre {
+  background: #fff;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0a0a23;
+}
+
+/* Caixa de texto */
+.sobre-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #eef6ff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.sobre-box p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+
+/* Seção sobre SINTOMAS */
+.sintomas {
+  background: #f9fafb;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.sintomas h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0a0a23;
+}
+
+.sintomas-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cards dos sintomas */
+.card-sintoma {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 14px;
+  width: 420px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-sintoma:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-sintoma h3 {
+  font-size: 20px;
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+.card-sintoma ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-sintoma li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Aviso */
+.aviso {
+  margin-top: 40px;
+  background: #fff8e1;
+  color: #7a4a00;
+  border-left: 6px solid #ffc107;
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+
+/* Seção sobre TRANSMISSÃO */
+.transmissao {
+  background: #fff;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.transmissao h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0a0a23;
+}
+
+.transmissao-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Imagem */
+.transmissao-img img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Blocos de informação */
+.transmissao-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.card-transmissao {
+  background: #f9fafb;
+  padding: 20px 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-transmissao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-transmissao h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.card-transmissao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-transmissao li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Seção sobre FORMA DE PREVENÇÃO */
+.prevention-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.prevention-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.prevention-section .description {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.cards-container h3 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo específico para a seção de Eliminação de Focos */
+.focos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; /* Alinha os itens centralizados */
+}
+
+
+/* Estilo específico para a seção de Eliminação de Focos */
+.focos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; /* Alinha os itens centralizados */
+}
+
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* cores dos ícones */
+.icon.red { background-color: #ff6b6b; }
+.icon.blue { background-color: #4d79ff; }
+.icon.green { background-color: #4cd137; }
+.icon.yellow { background-color: #f1c40f; }
+.icon.purple { background-color: #a29bfe; }
+.icon.blue-light { background-color: #74b9ff; }
+.icon.pink { background-color: #ff6ec7; }
+.icon.orange { background-color: #ffa502; }
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+
+/* Seção sobre TRATAMENTO*/
+body {
+  background-color: #f9fbff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 25px 0;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f0f6ff;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.box {
+  flex: 1;
+  min-width: 280px;
+  margin: 10px;
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #2d6cdf;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.box ul li::before {
+  content: "✔";
+  margin-right: 10px;
+  color: #2d6cdf;
+  font-weight: bold;
+}
+
+.box.red h2 {
+  color: #a40000;
+}
+
+.box.red ul li::before {
+  content: "⚠";
+  color: #c62828;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  background: #f6faff;
+  border-radius: 8px;
+  padding: 15px;
+  color: #333;
+}
+
+.footer strong {
+  font-weight: bold;
+}
+
+
+
+/* Seção sobre MEDIDAS DE CONTROLE*/
+body {
+  background-color: #f9fbff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fbff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.box ul li::before {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.box.green h2 {
+  color: #2e7d32; /* verde */
+}
+
+.box.green ul li::before {
+  content: "✔";
+  color: #2e7d32;
+}
+
+.box.blue h2 {
+  color: #1565c0; /* azul */
+}
+
+.box.blue ul li::before {
+  content: "✔";
+  color: #1565c0;
+}
+
+
+
+
+
+
+
+
+/* rodape */
+footer {
+  background-color: #1f2937; /* cinza escuro */
+  color: #f9fafb; /* quase branco */
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #9ca3af; /* cinza claro */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #374151;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
